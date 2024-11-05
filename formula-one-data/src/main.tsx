@@ -4,10 +4,15 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.tsx";
 import { ThemeProvider } from "./providers/theme-provider.tsx";
+import DriverPage from "./pages/DriverPage.tsx";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/driver/:driverId",
+    element: <DriverPage />,
   },
 ]);
 
