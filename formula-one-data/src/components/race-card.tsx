@@ -63,7 +63,7 @@ export const RaceCard = ({
             <span className="text-sm text-muted-foreground">{nationality}</span>
           </div>
           <span
-            className={`text-sm font-semibold px-3 py-1 ${constructorColor} text-white rounded-full`}
+            className={`text-sm font-semibold px-3 py-1 ${constructorColor} rounded-full`}
           >
             {constructor.name}
           </span>
