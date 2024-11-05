@@ -7,6 +7,7 @@ interface Props {
   givenName: string;
   familyName: string;
   nationality: string;
+  driverId: string;
   constructor: Constructor;
 }
 
@@ -33,6 +34,7 @@ export const RaceCard = ({
   givenName,
   familyName,
   nationality,
+  driverId,
   constructor,
 }: Props) => {
   const constructorColor = getConstructorColor(constructor.name);
@@ -50,7 +52,10 @@ export const RaceCard = ({
         </div>
         <CardHeader className="pt-20 pb-4">
           <CardTitle>
-            <a className="text-2xl font-bold hover:underline cursor-pointer duration-300 ease-in-out hover:text-neutral-300">
+            <a
+              href={`/driver/${driverId}`}
+              className="text-2xl font-bold hover:underline cursor-pointer duration-300 ease-in-out hover:text-neutral-300"
+            >
               {givenName} {familyName}
             </a>
           </CardTitle>

@@ -54,6 +54,7 @@ type DriverType = {
   code: string;
   url: string;
   givenName: string;
+  driverId: string;
   familyName: string;
   dateOfBirth: string;
   nationality: string;
