@@ -43,7 +43,7 @@ interface Location {
   country: string;
 }
 
-interface Driver {
+export interface Driver {
   position: string;
   Constructor: Constructor;
   Driver: DriverType;
